@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Score Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="winner" class="insertText"></div>
+        <div id="winner1" class="insertText"></div>
+        <div class="inside">
+            <h3>HOME</h3>
+            <div id="score-home">0</div>
+            <div>
+                <button class="design-btn active" onclick="add(scoreHome, 1)" disabled="true">+1</button>
+                <button class="design-btn active" onclick="add(scoreHome, 2)" disabled>+2</button>
+                <button class="design-btn active" onclick="add(scoreHome, 3)" disabled>+3</button>
+            </div>
+        </div>
+        <div>
+            <button class="design-btn middle" onclick="startGame()">New Game</button>
+            <p id="timer">00:10</p>
+        </div>
+        <div class="inside">
+            <h3>GUEST</h3>
+            <div id="score-guest">0</div>
+            <div>
+                <button class="design-btn active" onclick="add(scoreGuest, 1)" disabled>+1</button>
+                <button class="design-btn active" onclick="add(scoreGuest, 2)" disabled>+2</button>
+                <button class="design-btn active" onclick="add(scoreGuest, 3)" disabled>+3</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
